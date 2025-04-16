@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>180</width>
+    <height>120</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget_main">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBox_main_info">
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>360</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>260</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>flechazo</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QCalendarWidget" name="calendarWidget_sidebar"/>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_sidebar_info">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>180</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>info</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QTextBrowser" name="textBrowser_sidebar_info">
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;flechazo💮&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;我在人间贩卖黄昏&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;只为收集世间温柔遇见你&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_sidebar_detail">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>detail</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_sidebar_detail_count">
+            <property name="text">
+             <string>工具个数:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLCDNumber" name="lcdNumber_sidebar_detail_count">
+            <property name="value" stdset="0">
+             <double>99.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_sidebar_detail_day">
+            <property name="text">
+             <string>开发天数:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLCDNumber" name="lcdNumber_sidebar_detail_day">
+            <property name="value" stdset="0">
+             <double>520.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser_sidebar_log">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>160</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_main_navigate">
+      <property name="minimumSize">
+       <size>
+        <width>360</width>
+        <height>360</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Navigate</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="groupBox_main_navigate_info">
+         <property name="minimumSize">
+          <size>
+           <width>360</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Info</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QTextBrowser" name="textBrowser">
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;人生是场重大的旅行🚃&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_main_navigate_tools">
+         <property name="minimumSize">
+          <size>
+           <width>360</width>
+           <height>240</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Tools</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QTabWidget" name="tabWidget_main_navigate_tools">
+            <property name="minimumSize">
+             <size>
+              <width>240</width>
+              <height>240</height>
+             </size>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab_main_navigate_tools_tool">
+             <attribute name="title">
+              <string>工具集</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QScrollArea" name="scrollArea_main_navigate_tools_tool">
+                <property name="minimumSize">
+                 <size>
+                  <width>240</width>
+                  <height>240</height>
+                 </size>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>713</width>
+                   <height>420</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout">
+                  <item row="6" column="1">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_draft">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>草稿</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_AI">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>AI</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_collecte">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>收藏</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_toolcollect">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>工具集</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_components">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>组件</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_projectcollect">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>项目集</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_communication">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>通信</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_file">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>文件操作</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_plan">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>个人规划</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_knowledge">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>知识库</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_project">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>项目管理</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_codeexample">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>代码小抄</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_script">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>其他脚本</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QPushButton" name="pushButton_main_navigate_tools_tool_moment">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>60</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>240</width>
+                      <height>90</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>小美好</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_main_navigate_tools_navigate">
+             <attribute name="title">
+              <string>导航集</string>
+             </attribute>
+            </widget>
+            <widget class="QWidget" name="tab_main_navigate_tools_AI">
+             <attribute name="title">
+              <string>CCAI</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QGroupBox" name="groupBox_main_navigate_tools_AI_config">
+                <property name="title">
+                 <string>环境配置</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_main_navigate_tools_AI_config_ollama_downloadpath">
+                   <property name="text">
+                    <string>ollama下载路径</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="lineEdit_main_navigate_tools_AI_config_ollama_downloadpath">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="pushButton_main_navigate_tools_AI_config_ollama_downloadpath">
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>选择路径</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_main_navigate_tools_AI_config_ollama_installpath">
+                   <property name="text">
+                    <string>ollama安装路径</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="lineEdit_main_navigate_tools_AI_config_ollama_installpath">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QPushButton" name="pushButton_main_navigate_tools_AI_config_ollama_installpath">
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>选择路径</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_main_navigate_tools_AI_config_ollama_selectmodle">
+                   <property name="text">
+                    <string>选择模型</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1" colspan="2">
+                  <widget class="QComboBox" name="comboBox_main_navigate_tools_AI_config_ollama_selectmodel">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_main_navigate_tools_AI_operate">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>操作</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_4">
+                 <item row="0" column="0">
+                  <widget class="QComboBox" name="comboBox_main_navigate_tools_AI_operate_control">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QPushButton" name="pushButton_main_navigate_tools_AI_operate_install">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>安装AI环境</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2" rowspan="2">
+                  <widget class="QPushButton" name="pushButton_main_navigate_tools_AI_operate_startchat">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>60</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>240</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>开始聊天</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QComboBox" name="comboBox_main_navigate_tools_AI_operate_connect">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QPushButton" name="pushButton_main_navigate_tools_AI_operate_run">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>运行AI环境</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar_main">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_main_file">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_main_file_open"/>
+    <addaction name="action_main_file_close"/>
+    <addaction name="action_main_file_exit"/>
+    <addaction name="action_main_file_save"/>
+    <addaction name="action_main_file_saveas"/>
+    <addaction name="action_main_file_share"/>
+   </widget>
+   <widget class="QMenu" name="menu_main_edit">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_main_edit_revoke"/>
+    <addaction name="action_main_edit_redo"/>
+    <addaction name="action_main_edit_cut"/>
+    <addaction name="action_main_edit_copy"/>
+    <addaction name="action_main_edit_paste"/>
+    <addaction name="action_main_edit_find"/>
+    <addaction name="action_main_edit_replace"/>
+   </widget>
+   <widget class="QMenu" name="menu_main_view">
+    <property name="title">
+     <string>视图</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_main_tool">
+    <property name="title">
+     <string>工具</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_main_control">
+    <property name="title">
+     <string>控件</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_main_help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_main_help_wellcome"/>
+    <addaction name="action_main_help_about"/>
+   </widget>
+   <addaction name="menu_main_file"/>
+   <addaction name="menu_main_edit"/>
+   <addaction name="menu_main_view"/>
+   <addaction name="menu_main_tool"/>
+   <addaction name="menu_main_control"/>
+   <addaction name="menu_main_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_main_file_open">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_main_file_close">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="action_main_file_exit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_main_edit_revoke">
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="action_main_edit_redo">
+   <property name="text">
+    <string>重做</string>
+   </property>
+  </action>
+  <action name="action_main_edit_cut">
+   <property name="text">
+    <string>剪切</string>
+   </property>
+  </action>
+  <action name="action_main_edit_copy">
+   <property name="text">
+    <string>复制</string>
+   </property>
+  </action>
+  <action name="action_main_edit_paste">
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+  </action>
+  <action name="action_main_file_save">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_main_file_saveas">
+   <property name="text">
+    <string>保存为</string>
+   </property>
+  </action>
+  <action name="action_main_file_share">
+   <property name="text">
+    <string>分享</string>
+   </property>
+  </action>
+  <action name="action_main_edit_find">
+   <property name="text">
+    <string>查找</string>
+   </property>
+  </action>
+  <action name="action_main_edit_replace">
+   <property name="text">
+    <string>替换</string>
+   </property>
+  </action>
+  <action name="action_main_help_wellcome">
+   <property name="text">
+    <string>欢迎</string>
+   </property>
+  </action>
+  <action name="action_main_help_about">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
